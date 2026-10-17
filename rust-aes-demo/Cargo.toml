@@ -1,0 +1,22 @@
+[package]
+name = "rust-aes-demo"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Teaching material: the same AES module, naive and hardened. Deliberately broken on purpose."
+
+[dependencies]
+# both implementations' dependencies are present in every build, so the demo never waits for a compile
+aes = "0.8"                                        # naive: the block cipher, the mode is hand-rolled
+aes-gcm = "0.10"                                   # hardened: AEAD, mode and authentication in one
+secrecy = "0.8"                                    # hardened: a secret that cannot be printed, wiped on drop
+subtle = "2"                                       # hardened: constant-time comparison
+rand_core = { version = "0.6", features = ["getrandom"] }
+
+[features]
+# default = the naive implementation; `--features hardened` = the hardened one
+default = []
+hardened = []
+
+[profile.release]
+debug = true

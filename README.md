@@ -10,8 +10,11 @@ Materials for session 3: research, sources, and everything prepared for the day.
 ## Layout
 
 ```
-research/    feynman.is /deepresearch outputs (markdown) + provenance files
+research/        feynman.is /deepresearch outputs (markdown) + provenance files
+rust-aes-demo/   the Rust demonstration: the same AES module, naive and hardened
 ```
+
+`research-plan.md` holds the 14 research questions and their run commands.
 
 ## research/
 
