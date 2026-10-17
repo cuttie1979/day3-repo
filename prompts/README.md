@@ -8,9 +8,9 @@ One file per prompt. The file name is the slide it belongs to:
 
 `15.2` is the second prompt on slide 15. On the day, when slide 15 is up, the prompt is `15.1`.
 
-⚠️ **The slide numbers are provisional.** They come from the deck, and the deck is not written yet.
-The numbers below assume the opening has 14 slides before the first prompt. When the deck exists,
-they are renumbered in one pass — see `renumber.sh`.
+⚠️ **The slide numbers now come from the written deck.** The three creation prompts sit on slides 15,
+16 and 17; the calibration prompt on slide 60. If the deck is reordered, `renumber.sh` moves them in
+one pass.
 
 ## The prompts
 
@@ -19,7 +19,7 @@ they are renumbered in one pass — see `renumber.sh`.
 | `15.1-jarvis-orchestrator.md` | 15 | the global master orchestrator (Jarvis) |
 | `16.1-workflow-agents.md` | 16 | the project's `wf-*` lens agents |
 | `17.1-workflow-md.md` | 17 | `WORKFLOW.md` — the measure |
-| `48.1-review-calibration.md` | ~48 | runs the review on the known-broken module |
+| `60.1-review-calibration.md` | 60 | runs the review on the known-broken module |
 
 ## Why the prompts are shaped this way
 
