@@ -25,13 +25,10 @@ Published on the day's page as `aicode.page/research/<file>.md`
 
 ## Research questions
 
-| # | Question | Act | Mode |
-|---|---|---|---|
-| 1 | Does writing tests before code improve code quality with LLM coding agents? | Try | **live** |
-| 2 | Do structured requirements (acceptance criteria, Gherkin, formal specs) improve LLM code generation? | Contract | pre-run |
-| 3 | How does context (structure vs prose, ordering, window) affect LLM code generation, and what degrades over multi-turn? | Material | pre-run |
-| 4 | Mutation testing and test adequacy: what does coverage miss? | Try / Close | pre-run |
-| 5 | What is not guaranteed: LLM-as-reviewer reliability, self-preference bias, plausible-but-wrong code | Close | pre-run |
+See **[research-plan.md](research-plan.md)** — the 14 questions, the ready-to-paste
+`feynman deepresearch` command for each, the slugs, and the status.
+
+All of them are pre-run in the qube; the session walks through the results one by one.
 
 The day's acts: Understand (Feynman) → Contract (spec) → Try (test) → Material (context) → Close (loop).
 
