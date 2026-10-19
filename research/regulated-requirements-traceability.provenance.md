@@ -1,0 +1,26 @@
+# Provenance: How regulated industries trace requirements to tests and evidence (ASPICE, ISO 26262, DO-178C, IEC 62304)
+
+- **Date:** 2026-10-18
+- **Rounds:** 2 research rounds (4 parallel researcher streams + lead direct primary-source verification), then 2 review rounds (1 FATAL-bearing review, 1 confirming review)
+- **Sources consulted:** ~76 unique sources across the four regimes plus empirical traceability literature and tooling documentation
+- **Sources accepted (read at the level stated in the report):**
+  - **Primary / publisher-published (read directly):** Automotive SPICE PAM v3.1, v4.0 and v4.1 (VDA QMC, full text); Automotive SPICE Guidelines v2.0 and v2.1 (VDA QMC); FAA AC 20-115D; FDA "Content of Premarket Submissions for Device Software Functions" (2023, 46 pp); FDA "General Principles of Software Validation" (2002); FDA QMSR pages; NASA/AIAA DO-178C paper (NTRS 20120016835); official ISO 26262 preview pages (Parts 4, 6, 8, 2018 TOCs); IEC 62304 preview; RTCA DO-178 document set page
+  - **Publicly posted copies of paywalled standards (labelled `[P*]` in the report):** ISO 26262-2:2018; ISO 26262-3/4/5/6/8:2011
+  - **Regulator/standards bodies:** FDA, FAA, EASA, NIST SSDF, SLSA, OMG ReqIF, OASIS OSLC, SCSC GSN, EU AI Act
+  - **Peer-reviewed (abstract and/or full text as stated):** Mäder & Egyed 2015; Rempel & Mäder 2016; Ruiz et al. 2023; Wohlrab et al. 2018; Gotel & Finkelstein 1994; Ramesh & Jarke 2001; Borg et al. 2013; Charalampidou et al. 2020; Falcini & Lami 2020; Moy et al. 2013; Marques & Cunha 2017; Krauss et al. 2015
+  - **Vendor/secondary (used for mechanism or clause paraphrase only, labelled `[S]`):** LDRA, AdaCore, Rapita, Parasoft, UL Solutions, TheArtOfService clause-paraphrase pages, Wikipedia (DO-178C, IEC 62304), Johner Institute, St John Lynch training material, JAMA, PTC, IBM, Siemens Polarion, Eclipse Capra
+- **Sources rejected or removed:**
+  - Three draft sources were removed during citation verification for lacking citation support: a Rathod et al. clause page, an LDRA ISO 26262 whitepaper, and Bouillon et al. (REFSQ 2013) — all were defined but never cited; the first two were also superseded by stronger sources.
+  - Rejected as unsourceable and therefore **not** used as concepts: "traceability theater" and "trace explosion" (no reputable literature found); a claim that ReqIF is ISO/IEC 23396 (no evidence found); ISO/IEC 42001 primary page (HTTP 403).
+  - Distrusted and downgraded rather than accepted: unsourced "stale-link rate" and traceability-ROI figures (none found); IBM DOORS Next documentation (HTTP 403 to automated fetch, human-browser reachable — kept with an explicit verification note).
+- **Verification: PASS WITH NOTES**
+  - Round 1 review (`outputs/.drafts/regulated-requirements-traceability-verification.md`): 2 FATAL, 8 MAJOR, 10 MINOR. Both FATALs (a false "tool qualification has no analogue outside DO-178C" claim, contradicted by ISO 26262-8 Clause 11; and comparison-matrix evidence labels overstating primary provenance) and all MAJORs were fixed in `...-revised.md`.
+  - Round 2 review (`outputs/.drafts/regulated-requirements-traceability-verification2.md`): **no FATAL remaining**; 1 residual MAJOR (evidence-class bookkeeping in the verification appendix) and several MINORs, all fixed in the delivered file.
+  - URL checks: 71/76 source URLs returned HTTP 200/202; 5 returned HTTP 403 to automated fetch (ISO catalogue pages, Wiley/DOI, IBM docs) and are either marked as such or replaced with a working equivalent (IEC webstore, OpenAlex record, en-standard.eu).
+  - **Open residual checks (not blockers):** (a) ISO 26262:2018 normative sentences for Parts 3–8 were not read (2011 copies + 2018 TOCs used) — clause numbers for those parts should be re-verified against a licensed 2018 copy; (b) DO-178C Annex A objective counts and §5.5/§6.5 section numbers rest on vendor/secondary sources; (c) IEC 62304's §7.3 traceability sub-clause number is reported inconsistently (7.3.3 vs 7.3.6); (d) ISO 26262 structural coverage by ASIL is single-sourced; (e) the PAM 4.0→4.1 comparison is a three-base-practice sample, not an exhaustive diff.
+  - Web-search capability degradation recorded: Exa HTTP 429, Brave/Jina missing API keys, DuckDuckGo bot-check at various points; `curl` used for paywalled-adjacent PDFs that rejected the fetcher.
+- **Plan:** `outputs/.plans/regulated-requirements-traceability.md`
+- **Research files:** `outputs/.drafts/regulated-requirements-traceability-research-automotive.md`, `-do178c.md`, `-medical.md`, `-transfer.md`, `-lead.md`
+- **Review files:** `outputs/.drafts/regulated-requirements-traceability-verification.md`, `outputs/.drafts/regulated-requirements-traceability-verification2.md`
+- **Draft chain:** `-draft.md` → `-cited.md` (verifier: numeric citations, URL status, DOI cross-checks) → `-revised.md` (post-review corrections) → `outputs/regulated-requirements-traceability.md`
+- **Local raw artifacts:** `notes/regulated-trace/` (aspice-pam-40/41 .pdf/.txt, aspice-31-vs-40-swe, ul-aspice-pocketguide, faa-ac20-115d, fda-2023-device-software, nasa-do178c, iso26262-6/8 previews, iec62304 preview, iso26262-8-iteh)

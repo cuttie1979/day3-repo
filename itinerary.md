@@ -17,11 +17,11 @@ Mi készüljön el, mi legyen tesztelve, mit kell mérni. Sorrendben, pipálhat�
 
 14 futás, `research-plan.md` szerint. Mindegyikhez a parancs kész, csak bemásolni kell.
 
-- [ ] `feynman setup` kész, a DeepSeek provider bejelentkezve
-- [ ] `feynman doctor` tiszta
-- [ ] `FEYNMAN_TELEMETRY=off` (vagy `DO_NOT_TRACK=1`) beállítva
-- [ ] `OPENALEX_API_KEY`, `SEMANTIC_SCHOLAR_API_KEY`, `CROSSREF_MAILTO` beállítva
-- [ ] a 14 futás lefutott
+- [x] `feynman setup` kész, a DeepSeek provider bejelentkezve
+- [x] `feynman doctor` tiszta
+- [x] `FEYNMAN_TELEMETRY=off` (vagy `DO_NOT_TRACK=1`) beállítva
+- [x] `OPENALEX_API_KEY`, `SEMANTIC_SCHOLAR_API_KEY`, `CROSSREF_MAILTO` beállítva
+- [x] **a 14 futás lefutott** — összesen 412 perc
 
 **Minden futás után ezt nézd meg — ez a kritikus ellenőrzés:**
 
@@ -32,22 +32,27 @@ Mi készüljön el, mi legyen tesztelve, mit kell mérni. Sorrendben, pipálhat�
 | 3 | mennyi ideig futott | ebből lesz a napon az élő demó időzítése |
 | 4 | hány forrást idéz | ha 3 alatt van, a kérdés túl szűk volt |
 
-| Kérdés | Futott | `outputs/` | Provenance | Idő | Források |
+| # | Slug | Futott | Idő | `outputs/` | Provenance |
 |---|---|---|---|---|---|
-| 1 Karpathy / CLAUDE.md | | | | | |
-| 2 Musk / first principles | | | | | |
-| 3 követelmény → technikai | | | | | |
-| 4 acceptance criteria kérdések | | | | | |
-| 5 quality gate-ek | | | | | |
-| 6 regulated traceability | | | | | |
-| 7 engineering dokumentumok | | | | | |
-| 8 test-first + agentek | | | | | |
-| 9 test adequacy | | | | | |
-| 10 formázás/lint hatás | | | | | |
-| 11 security-by-design | | | | | |
-| 12 kontextusfájl hatékonyság | | | | | |
-| 13 AI-kód hibái | | | | | |
-| 14 a 100× állítás | | | | | |
+| 1 | `karpathy-claude-md-recommendation` | 18:51–18:54 | **3 min** | ✓ | ✓ |
+| 2 | `elon-musk-first-principles-thinking` | 19:00–19:05 | 5 min | ✓ | ✓ |
+| 3 | `requirements-decomposition-patterns` | 19:07–19:12 | 5 min | ✓ | ✓ |
+| 4 | `business-requirements-acceptance-criteria-questions` | 19:13–19:18 | 5 min | ✓ | ✓ |
+| 5 | `software-quality-gates` | 19:39–20:18 | 39 min | ✓ | ✓ |
+| 6 | `regulated-requirements-traceability` | 20:22–21:15 | 53 min | ✓ | ✓ |
+| 7 | `engineering-document-types` | 21:16–21:21 | 5 min | ✓ | ✓ |
+| 8 | `llm-agents-test-first` | 21:22–21:48 | 26 min | ✓ | ✓ |
+| 9 | `test-adequacy-escaped-defects` | 21:49–22:28 | 39 min | ✓ | ✓ |
+| 10 | `code-formatting-linting-evidence` | 22:28–22:52 | 24 min | ✓ | ✓ |
+| 11 | `security-by-design-practice` | 07:41–08:39 | 58 min | ✓ | ✓ |
+| 12 | `agent-context-files` | 09:24–10:08 | 44 min | ✓ | ✓ |
+| 13 | `ai-code-defect-taxonomy` | 10:12–11:17 | **65 min** | ✓ | ✓ |
+| 14 | `defect-cost-100x-claim` | 11:17–11:58 | 41 min | ✓ | ✓ |
+
+Mind a 14 futás írt markdown**t és provenance-t** — a flash-tier kockázat nem jött be. **Két anomália a metaadatokban** (mindkettő megoldódott, lásd `research-plan.md`):
+
+1. **Az 1. kérdés szövege hibás** — a #2 kérdése van odaírva (Musk), a slug viszont a Karpathyé. A helyes kérdés a `research-plan.md`-ben.
+2. **Az 5. slug provenance-fájlnak tűnik** (`software-quality-gates.provenance`) — a fő markdown valószínűleg `software-quality-gates.md`. Nézd meg, mi került az `outputs/`-ba.
 
 **Kimenet:** a markdownok a `research/` mappába, `<slug>.md` néven.
 

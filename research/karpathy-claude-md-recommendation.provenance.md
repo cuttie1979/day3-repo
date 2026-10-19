@@ -1,0 +1,28 @@
+# Provenance: What Karpathy Recommends for CLAUDE.md
+
+- **Date:** 2026-10-18
+- **Rounds:** 1 research round (direct search)
+- **Sources consulted:** 10+
+- **Sources accepted:**
+  - ThreadReaderApp mirror of Andrej Karpathy X thread: https://threadreaderapp.com/thread/2015883857489522876.html
+  - forrestchang/andrej-karpathy-skills README: https://github.com/forrestchang/andrej-karpathy-skills
+  - Derived CLAUDE.md raw: https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+  - Anthropic CLAUDE.md docs: https://code.claude.com/docs/en/claude-md
+  - Anthropic best practices: https://code.claude.com/docs/en/best-practices
+  - MCP.Directory annotated analysis: https://mcp.directory/blog/karpathy-claude-md-annotated-2026
+  - Delv attribution article: https://delv.tools/blog/karpathy-claudemd-isnt-karpathys-may-2026
+  - Alex Rusin blog: https://blog.alexrusin.com/the-viral-karpathy-claude-md-file-heres-the-honest-truth-about-what-it-actually-is/
+  - Karpathy's own CLAUDE.md in llm-council: https://github.com/karpathy/llm-council/blob/master/CLAUDE.md
+- **Sources rejected:**
+  - Direct X.com fetch: HTTP 403 (blocked/paywalled); replaced with ThreadReaderApp mirror.
+  - Unverified anecdotal performance claims (e.g., "mistakes cut to 11%") excluded from findings.
+- **Verification:** PASS WITH NOTES
+  - Primary source reached only via mirror.
+  - No evidence found that Karpathy wrote, published, or endorsed the derived CLAUDE.md file.
+- **Plan:** outputs/.plans/karpathy-claude-md-recommendation.md
+- **Research files:**
+  - outputs/.drafts/karpathy-claude-md-recommendation-research-direct.md
+  - outputs/.drafts/karpathy-claude-md-recommendation-draft.md
+  - outputs/.drafts/karpathy-claude-md-recommendation-cited.md
+  - outputs/.drafts/karpathy-claude-md-recommendation-verification.md
+- **Final artifact:** outputs/karpathy-claude-md-recommendation.md

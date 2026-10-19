@@ -1,0 +1,31 @@
+# Provenance: Questions Required to Write Quality Business Requirements with Acceptance Criteria
+
+- **Date:** 2026-10-18
+- **Rounds:** 1 direct-research round
+- **Sources consulted:** 14 sources (web pages and PDFs)
+- **Sources accepted:** 14
+  - Agile Alliance. "What does INVEST Stand For?"
+  - Atlassian. "What is Acceptance Criteria? Definition, Examples, & Tips."
+  - Bridging the Gap. "What Questions Do I Ask During Requirements Elicitation?"
+  - Business Analyst’s Toolkit. "Requirements Elicitation Questions for Business Analysts."
+  - GitScrum. "Writing Clear Acceptance Criteria Best Practices."
+  - Inside Product. "Ten Powerful Questions for Discovering Acceptance Criteria."
+  - International Institute of Business Analysis. "Quality Criteria for Requirements." PDF, 2021.
+  - International Institute of Business Analysis. "Verify Requirements and Designs" task card. PDF.
+  - ISO/IEC/IEEE 29148:2018 characteristics summary via TheArtOfService.
+  - Mannion, M. and Keepence, B. "SMART Requirements." ACM SIGSOFT Software Engineering Notes, 1995.
+  - Modern Analyst. "Generic Questions for Interviewing Stakeholders."
+  - ReqLens. "Requirement quality checklist." PDF.
+  - Scrum Alliance. "Everything You Need to Know About Acceptance Criteria."
+  - ThoughtWorks. "Applying BDD acceptance criteria in user stories."
+  - Watermark Learning. "101+ Questions you can ask to Elicit Requirements and Uncover Expectations." PDF.
+- **Sources rejected:** 3
+  - IIBA web pages for BABOK Guide 7.2 Verify Requirements, 4.1 Prepare for Elicitation, and verify-vs-validate scenario — returned HTTP 401; replaced by official IIBA PDFs and summaries.
+  - O'Reilly CCBA/CBAP study guide excerpt — returned HTTP 403; replaced by official IIBA PDF.
+- **Verification:** PASS WITH NOTES
+- **Plan:** outputs/.plans/business-requirements-acceptance-criteria-questions.md
+- **Research files:**
+  - outputs/.drafts/business-requirements-acceptance-criteria-questions-research-direct.md
+  - outputs/.drafts/business-requirements-acceptance-criteria-questions-draft.md
+  - outputs/.drafts/business-requirements-acceptance-criteria-questions-cited.md
+  - outputs/.drafts/business-requirements-acceptance-criteria-questions-verification.md

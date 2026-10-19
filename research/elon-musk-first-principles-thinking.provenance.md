@@ -1,0 +1,30 @@
+# Provenance: How Does Elon Musk Use First Principle Thinking?
+
+- **Date:** 2026-10-18
+- **Rounds:** 1 direct-research round
+- **Sources consulted:** 10
+  - CNBC Make It (2018) — fetched
+  - StartupArchive — fetched
+  - TED Blog (2013) — fetched
+  - Untangled newsletter (2023) — fetched
+  - James Clear — fetched
+  - Cen 2025 conference paper — downloaded and parsed
+  - CNBC Africa (2020) — fetched
+  - The Book of Elon Musk — fetched
+  - YouTube: Kevin Rose interview with Elon Musk (2012) — located, not directly fetched
+  - Reddit: 2015 Elon Musk AMA — located, not readable
+- **Sources accepted:** 8 (all fetched sources)
+- **Sources rejected/not used:**
+  - WSJ profile (https://www.wsj.com/tech/elon-musk-first-principles-e50c2a07) — HTTP 401
+  - VentureBeat article — HTTP 429
+  - Medium 3-step first-principles article — HTTP 403
+- **Verification:** PASS WITH NOTES
+  - Primary video sources (Kevin Rose interview, USC commencement) and Reddit AMA not directly fetched; quotes attributed to corroborating secondary sources.
+  - Single-source quantitative claims from Cen 2025 flagged as directional.
+- **Plan:** outputs/.plans/elon-musk-first-principles-thinking.md
+- **Research files:**
+  - outputs/.drafts/elon-musk-first-principles-thinking-research-direct.md
+  - outputs/.drafts/elon-musk-first-principles-thinking-draft.md
+  - outputs/.drafts/elon-musk-first-principles-thinking-cited.md
+  - outputs/.drafts/elon-musk-first-principles-thinking-verification.md
+- **Final artifact:** outputs/elon-musk-first-principles-thinking.md

@@ -1,0 +1,21 @@
+# Provenance: Effective agent context files (AGENTS.md / CLAUDE.md) and their failure modes
+
+- **Date:** 2026-10-19
+- **Rounds:** 3 parallel researcher tracks (official docs, empirical evidence, practitioner/security failures), 1 lead direct-source pass, 1 verifier citation/URL pass, 2 reviewer passes.
+- **Sources consulted:** 42 URL checks (all HTTP 200) plus full-text reads of the load-bearing papers and vendor docs. Main sources: AGENTS.md; Claude Code memory/best-practices docs; OpenAI Codex AGENTS.md and config docs; GitHub Copilot custom-instructions docs; Cursor rules docs; VS Code custom-instructions docs; 12 primary papers/preprints (ETH AGENTS.md evaluation, two-agent ablation, Lulla efficiency, Agent READMEs, Context Engineering, Configuration Smells, Catastrophic Remembering, Probe-and-Refine, ContextCov, RepoNorm, Cursor Rules, IFScale, Lost in the Middle, Control Illusion, ConInstruct); Chroma Context Rot; Pillar Security, Backslash, Prompt Security, NVIDIA AI Red Team, Mitiga, IDEsaster, CSA; vLLM contributor guide; Anthropic context-engineering post and CLAUDE.md blog; GitHub practitioner blog.
+- **Sources accepted:** 39 distinct source URLs in the final Sources list (S33a and S33b are separate URLs), all reachable.
+- **Sources rejected:** Four sources removed as uncited during revision (S22 Cursor-rules taxonomy, S37 Copilot support matrix, S40 Claude Code security page, S41 Copilot cloud-agent risks). Rejected secondary-source numbers that conflicted with the primary paper: trade coverage's "−3% / +4%" for the ETH study (paper says −0.5%/−2% and +2.4%) and a secondary Flesch score of 16.6 (paper reports 42.39). The unsourced "trade coverage misnamed the benchmark" sentence was removed rather than cited.
+- **Verification:** PASS WITH NOTES. All 39 source URLs are live; every checked URL returned HTTP 200. Quantitative claims were traced to arXiv abstracts/HTML, vendor docs, or security posts. Two review passes found and fixed 2 FATAL (modal overstatement; a flawed verification appendix) and 11 MAJOR issues (instance-vs-file count, length/overview wording, competing superlatives, CTXbench denominator, unpowered equivalence claim, "guarantee", probe-refine limits, security-demo labeling, GitHub-blog scope, a pp/percent unit error), plus minor attestation issues. Notes: no attack was independently reproduced; most studies are preprints; vendor docs are living and versioned as of the access date; eight papers have arXiv metadata checks only because Semantic Scholar rate-limited.
+- **Plan:** outputs/.plans/agent-context-files.md
+- **Research files:**
+  - outputs/.drafts/agent-context-files-research-docs.md
+  - outputs/.drafts/agent-context-files-research-evidence.md
+  - outputs/.drafts/agent-context-files-research-failures.md
+  - outputs/.drafts/agent-context-files-research-lead.md
+  - outputs/.drafts/agent-context-files-lead-checks.md
+  - outputs/.drafts/agent-context-files-urlcheck.txt
+  - outputs/.drafts/agent-context-files-s6-check.txt
+- **Review files:**
+  - outputs/.drafts/agent-context-files-verification.md
+  - outputs/.drafts/agent-context-files-verification2.md
+- **Draft lineage:** draft → cited → revised (final).
