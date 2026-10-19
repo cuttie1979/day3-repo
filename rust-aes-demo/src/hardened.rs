@@ -8,8 +8,8 @@
 //! | hardcoded IV | a random 96-bit nonce per message, carried in front of the ciphertext |
 //! | no authentication | AES-256-GCM: a modified ciphertext does not decrypt, it returns `AuthFailed` |
 //! | the wrong key not rejected | the same tag check rejects it |
-//! | the key is a printable `String` | `SecretBox`, whose `Debug` is redacted |
-//! | the key is never wiped | `SecretBox` zeroizes on drop, and it cannot be copied by accident |
+//! | the key is a printable `String` | `Secret`, whose `Debug` is redacted |
+//! | the key is never wiped | `Secret` zeroizes on drop, and it cannot be copied by accident |
 //!
 //! Two properties here **cannot be tested**: the constant-time comparison and the wipe on drop.
 //! That is the point of the exercise — some guarantees can only come from the type and the crate,

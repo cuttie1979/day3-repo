@@ -1,3 +1,7 @@
+// The whole crate is declared free of `unsafe`: neither state can reach for a raw pointer, and the
+// compiler enforces it. It is one of the things Rust gives a crypto module.
+#![forbid(unsafe_code)]
+
 //! # rust-aes-demo — teaching material
 //!
 //! **Deliberately broken code lives in this crate.** The default implementation (`naive.rs`) is
@@ -6,6 +10,7 @@
 //!
 //! **Never copy the naive implementation into anything.** It is here so that the difference can be
 //! seen, measured and understood.
+
 //!
 //! ## The two states
 //!
