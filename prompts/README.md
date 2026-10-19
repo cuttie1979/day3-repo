@@ -47,6 +47,8 @@ The gap is real: 16 is the memory slide (what mempalace is *for*); its install p
 | `21.1-workflow-md.md` | 21 | `WORKFLOW.md` — the measure |
 | `64.1-review-calibration.md` | 64 | runs the review on the known-broken module |
 
+Two of these carry more than their own slide: **19** configures through the `opencode-configuration` skill, so it needs 14; and **21** writes the project's memory wing into the head of `WORKFLOW.md`, so the orchestrator, the `wf-*` agents and the measure all use the same name.
+
 ## One thing to know about the language
 
 The setup prompts (13–17) are in **English**: they run in a terminal, and the room does not read
