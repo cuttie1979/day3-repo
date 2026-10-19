@@ -27,8 +27,8 @@ Holds the output of `feynman deepresearch "<question>"`, run in a Qubes qube.
 
 Naming: `<topic-slug>.md` plus `<topic-slug>.provenance.md` when Feynman writes one.
 
-Published on the day's page as `aicode.page/research/<file>.md`
-(the site server serves the site repo's `content/files/research/` as-is).
+Downloaded from this repository: everyone takes their own copy from `research/`.
+The day's page does not serve them.
 
 ## Research questions
 
