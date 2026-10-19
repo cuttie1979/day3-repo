@@ -15,7 +15,6 @@ rust-aes-demo/   the Rust demonstration: the same AES module, naive and hardened
 prompts/         one file per prompt, named by the slide it belongs to
 ```
 
-`presenter-outline.md` — block by block, what to say and where to watch.
 `itinerary.md` — what to make, test and measure, in order, with acceptance criteria.
 `research-plan.md` holds the 14 research questions and their run commands.
 `prompts/README.md` explains the numbering and the acceptance criteria for the generated agents.
