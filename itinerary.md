@@ -60,10 +60,35 @@ Mind a 14 futás írt markdown**t és provenance-t** — a flash-tier kockázat 
 
 ## 2 · Memória — a kutatás betöltése
 
-- [ ] a markdownok a `research/` mappában (qube → `qvm-copy` → `QubesIncoming/` → ide)
-- [ ] minden fájl betöltve a MemPalace-be, **dátummal és forrással**
+**A napon, élőben** — a 13. dia (MemPalace beat) mutatja meg. Nem előre: a feltöltés maga a demó.
+
+- [ ] a markdownok a `research/` mappában (kész: 28 fájl, 704 KB)
+- [ ] a **13. dián** betöltés a MemPalace-be: **dátummal és forrással**
 - [ ] a best practice-ek külön bejegyzésként (a workflow kapuihoz)
 - [ ] a #14 (a 100×) eredménye megjelölve: állítás vagy cáfolat
+
+### Sorrend — ez számít
+
+| Dia | Mi történik | Feltétel |
+|---|---|---|
+| 13 | a kutatás bekerül a memóriába | — |
+| 17 | a `WORKFLOW.md` promptja **a memóriából** dolgozik | a 13. diának **már meg kell lennie** |
+| 60 | a review kalibrációja a memória ellen méri a naiv modult | a **#11** (security-by-design) legyen benne |
+
+Vagyis a 13. dia nem dísz: **a 17. és a 60. dia rá épül.** Ha kimarad, az agent kitalálja a kapukat — és pont az a nap tanulsága, hogy azt nem szabad.
+
+### Mit érdemes először betölteni
+
+Ha nem fér bele mind a 14 élőben, ez a négy hordozza a napot:
+
+| # | Slug | Miért ez |
+|---|---|---|
+| 12 | `agent-context-files` | **„Prose is not enforcement"** — 88,3% vs 67,0%. A nap tézise, mérve |
+| 11 | `security-by-design-practice` | a 60. dia kalibrációjának a mércéje |
+| 5 | `software-quality-gates` | a `WORKFLOW.md` kapui |
+| 9 | `test-adequacy-escaped-defects` | „a lefedettség nem bizonyíték" — forrással |
+
+A többi tíz a nap után is betölthető; a markdownok a repóban maradnak.
 
 | AC | Ellenőrzés |
 |---|---|
@@ -71,8 +96,6 @@ Mind a 14 futás írt markdown**t és provenance-t** — a flash-tier kockázat 
 | minden bejegyzésen van forrás | a provenance fájlra hivatkozik |
 | visszakereshető | egy keresés a wing/room-ra visszaadja |
 | nincs bejegyzés forrás nélkül | ami nincs, az **hipotézis**, nem gyakorlat |
-
-**Miért most:** a 17. dia promptja (WORKFLOW.md) a memóriából dolgozik. Ha a memória üres, az agent kitalálja a kapukat — és pont az a nap tanulsága, hogy azt nem szabad.
 
 ---
 
